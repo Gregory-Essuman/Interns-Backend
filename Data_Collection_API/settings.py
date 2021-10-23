@@ -83,11 +83,11 @@ WSGI_APPLICATION = 'Data_Collection_API.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'Characters1',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'NAME': 'collectdata',
+        'USER': 'intern',
+        'PASSWORD': '!nternapp2021',
+        'HOST': 'wheregeospatial.com',
+        'PORT': '6432',
     }
 }
 
