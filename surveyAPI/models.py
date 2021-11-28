@@ -12,7 +12,7 @@ class SurveyPoints(models.Model):
     picture2 = models.CharField(max_length=255)
 
     # GeoDjango-specific: a geometry field (PointField)
-    geom_point = models.PointField()
+    geom_point = models.PointField(null=True)
     
     # Returns the string representation of the model.
     def __str__(self):
@@ -27,7 +27,7 @@ class SurveyLines(models.Model):
     picture2 = models.CharField(max_length=255)
 
     # GeoDjango-specific: a geometry field (LineStringField)
-    geom_line = models.LineStringField()
+    geom_line = models.MultiLineStringField()
     
     # Returns the string representation of the model.
     def __str__(self):

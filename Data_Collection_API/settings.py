@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.gis',
     'rest_framework',
-    'surveyAPI',
+    'rest_framework_gis',
+    'surveyapi',
 ]
 
 MIDDLEWARE = [
