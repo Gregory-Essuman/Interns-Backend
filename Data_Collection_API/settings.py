@@ -93,7 +93,7 @@ DATABASES = {
         'USER': 'intern',
         'PASSWORD': '!nternapp2021',
         'HOST': 'wheregeospatial.com',
-        'PORT': '5432',
+        'PORT': 5432,
     }
 }
 
