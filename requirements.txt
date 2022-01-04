@@ -22,8 +22,6 @@ Faker==11.1.0
 flake8==4.0.1
 Flask==2.0.2
 future==0.18.2
-GDAL==3.3.2
-geos==0.2.3
 gunicorn==20.1.0
 ipython==7.30.1
 isodate==0.6.0
