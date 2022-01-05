@@ -10,9 +10,12 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
-from pathlib import Path
 import os
 import django_heroku 
+from pathlib import Path
+from dotenv import load_dotenv 
+
+load_dotenv()
 
 if os.name == 'nt':
     VENV_BASE = os.environ['VIRTUAL_ENV']
@@ -92,11 +95,11 @@ WSGI_APPLICATION = 'Data_Collection_API.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'collectdata',
-        'USER': 'intern',
-        'PASSWORD': '!nternapp2021',
-        'HOST': 'wheregeospatial.com',
-        'PORT': 5432,
+        'NAME': os.getenv('NAME'),
+        'USER': os.getenv('USER'),
+        'PASSWORD': os.getenv('PASSWORD'),
+        'HOST': os.getenv('HOST'),
+        'PORT': os.getenv('PORT'),
     }
 }
 
