@@ -111,7 +111,7 @@ DATABASES = {
         'USER': 'intern',
         'PASSWORD': os.environ['PASSWORD'],
         'HOST': os.environ['HOST'],
-        'PORT': os.environ['PORT'],
+        'PORT': int(os.environ['PORT']),
     }
 }
 
