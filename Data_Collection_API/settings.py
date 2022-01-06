@@ -110,7 +110,7 @@ DATABASES = {
         'NAME': 'collectdata',
         'USER': 'intern',
         'PASSWORD': '!nternapp2021',
-        'HOST': 'wheregeospatial.com',
+        'HOST': os.environ['HOST'],
         'PORT': 5432,
     }
 }
