@@ -107,11 +107,11 @@ WSGI_APPLICATION = 'Data_Collection_API.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'collectdata',
-        'USER': 'intern',
-        'PASSWORD': '!nternapp2021',
+        'NAME': os.environ['NAME'],
+        'USER': os.environ['USER'],
+        'PASSWORD': os.environ['PASSWORD'],
         'HOST': os.environ['HOST'],
-        'PORT': 5432,
+        'PORT': os.environ['PORT'],
     }
 }
 
