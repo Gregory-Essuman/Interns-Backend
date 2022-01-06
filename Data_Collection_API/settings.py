@@ -13,10 +13,10 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 import django_heroku 
 from pathlib import Path
-from dotenv import load_dotenv 
-from decouple import config 
+#from dotenv import load_dotenv 
+#from decouple import config 
 
-load_dotenv()
+#load_dotenv()
 
 if os.name == 'nt':
     VENV_BASE = os.environ['VIRTUAL_ENV']
