@@ -18,6 +18,8 @@ from pathlib import Path
 
 #load_dotenv()
 
+# Path to Proj library
+
 if os.name == 'nt':
     VENV_BASE = os.environ['VIRTUAL_ENV']
     os.environ['PATH'] = os.path.join(VENV_BASE, 'Lib\\site-packages\\osgeo') + ';' + os.environ['PATH']
