@@ -18,7 +18,7 @@ from pathlib import Path
 
 #load_dotenv()
 
-# Path to Proj library
+# Path to Proj library for geo functionalities
 
 if os.name == 'nt':
     VENV_BASE = os.environ['VIRTUAL_ENV']
