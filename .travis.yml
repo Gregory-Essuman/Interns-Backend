@@ -1,7 +1,7 @@
 language: python
 python: 3.6
 before_install:
-- sudo apt-get install -y binutils libproj-dev libgdal-dev
+- sudo apt-get install -y binutils libproj-dev gdal-bin=2.1.2
 install: pip install -r requirements.txt
 script: python manage.py test --keepdb
 deploy:
