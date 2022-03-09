@@ -94,7 +94,7 @@ WSGI_APPLICATION = 'Data_Collection_API.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-#DATABASES = {
+# DATABASES = {
 #    'default': {
 #        'ENGINE': 'django.contrib.gis.db.backends.postgis',
 #        'NAME': os.getenv('NAME'),
@@ -103,7 +103,7 @@ WSGI_APPLICATION = 'Data_Collection_API.wsgi.application'
 #        'HOST': os.getenv('HOST'),
 #        'PORT': os.getenv('PORT'),
 #    }
-#}
+# }
 
 DATABASES = {
     'default': {
@@ -112,7 +112,7 @@ DATABASES = {
         'USER': os.environ['DB_USER'],
         'PASSWORD': os.environ['DB_PASSWORD'],
         'HOST': os.environ['DB_HOST'],
-        'PORT': 5432,
+        'PORT': 6432,
     }
 }
 
