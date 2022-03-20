@@ -13,10 +13,12 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 import django_heroku 
 from pathlib import Path
+# Use dotenv below if runing api locally.
 #from dotenv import load_dotenv 
 #from decouple import config 
 
-#load_dotenv()
+# Use load_dotenv to load .env file on local machine. This does not work in production.
+#load_dotenv()  
 
 # Path to Proj library for geo functionalities
 
@@ -94,6 +96,11 @@ WSGI_APPLICATION = 'Data_Collection_API.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# Use the DATABASE variable below if running app locally. A .env file must be present in the root of the project directory. \
+# The .env file must be loaded with the load_dotenv class from dotenv module. \
+# The .env file must contain SECRET KEY, NAME, USER, PASSWORD, HOST, PORT and DEBUG environment variables.
+
+
 # DATABASES = {
 #    'default': {
 #        'ENGINE': 'django.contrib.gis.db.backends.postgis',
@@ -104,6 +111,11 @@ WSGI_APPLICATION = 'Data_Collection_API.wsgi.application'
 #        'PORT': os.getenv('PORT'),
 #    }
 # }
+
+# Use the DATABASE variable below for production. This does not work locally. \
+# The environment vriables must be defined in the production environment i.e. Heroku as \ 
+# well as the CICD platform i.e. travis CI. 
+
 
 DATABASES = {
     'default': {
